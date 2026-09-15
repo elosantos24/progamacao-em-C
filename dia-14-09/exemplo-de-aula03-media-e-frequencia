@@ -1,0 +1,42 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float nota1, nota2, media;
+    float frequencia;
+    
+    printf("Digite a sua primeira nota: ");
+    scanf("%f", &nota1);
+    printf("\nDigite a sua segunda nota: ");
+    scanf("%f", &nota2);
+    
+    media = (nota1+nota2)/2.0f;
+    
+    printf("Digite a sua frequencia: ");
+    scanf("%f",&frequencia);
+    
+    if(frequencia>=75)
+    {
+        if(media>=6)
+        {
+        printf("\n Parabéns, você foi aprovado! com a média de %.2f", media);
+        printf("e também com frequência %.2f", frequencia);
+        }
+        else
+        {
+        printf("\n Você foi reprovado com a média %.2f", media);
+        }
+    }
+    else{
+        printf("\n Você foi reprovado com a frequência %.2f", frequencia);
+    }
+    return 0;
+}
