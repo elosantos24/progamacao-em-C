@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    float media, frequencia;
+    printf(" Digite sua frequência: ");
+    scanf("%f",&frequencia);
+    
+    printf(" Digite sua média: ");
+    scanf("%f",&media);
+    
+    if (frequencia< 75.0)
+        printf("Reprovado por falta.\n");
+        
+    else{
+        if(media>=6){
+            printf("Você foi aprovado :) \n");
+        }
+    }
+    return 0;
+}
