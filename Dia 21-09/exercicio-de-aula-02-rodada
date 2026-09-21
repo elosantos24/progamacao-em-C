@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+   int rodada = 1;
+   int pontuação;
+   int total = 0;
+   
+   while(rodada <=3){
+       printf("Digite os pontos da rodada %d: ",rodada);
+       scanf("%d", &pontuação);
+       
+       rodada++;
+       total= total + pontuação; 
+       
+   }
+   
+   printf("O total valor de ponto é: %d", total);
+   return 0;
+}
